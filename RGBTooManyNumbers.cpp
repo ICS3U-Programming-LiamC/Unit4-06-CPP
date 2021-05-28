@@ -7,14 +7,17 @@
 #include <iostream>
 #include <cmath>
 
+// main functon
 int main() {
+    // set counters to 0 and define them
     int counterRed = 0;
     int counterGreen = 0;
     int counterBlue = 0;
 
+    // make the for loops, this does all the stuff
     for (counterRed = 0; counterRed < 256; counterRed++) {
-        for (counterGreen = 0; counterGreen < 255; counterGreen++) {
-            for (counterBlue = 0; counterBlue < 255; counterBlue++) {
+        for (counterGreen = 0; counterGreen < 256; counterGreen++) {
+            for (counterBlue = 0; counterBlue < 256; counterBlue++) {
                 std::cout << counterRed << ", " <<
                 counterGreen << ", " << counterBlue << "\n";
             }
